@@ -1,6 +1,4 @@
 /*global document*/
-/*global alert*/
-
 //Variables
 var turn = -1;
 var board = ["", "", "","", "", "","", "", ""];
