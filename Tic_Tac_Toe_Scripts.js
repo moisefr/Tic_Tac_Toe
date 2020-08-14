@@ -1,5 +1,4 @@
 /*global document*/
-/*global alert*/
 
 //Variables
 var turn = -1;
@@ -19,7 +18,6 @@ function userinput(clicked_id){
     }
     turn = (-1)*turn;
     gameplay();
-    alert(board);
 }
 function player_input(){
     //determine who is playing
