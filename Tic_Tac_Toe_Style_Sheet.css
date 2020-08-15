@@ -48,7 +48,7 @@ h1 {
     transition-duration: 0.15s;
 }
 .butt:active {
-  background-color: #3e8e41;
+  background-color: blue;
   box-shadow: 0 5px #666;
   transform: rotateY(180deg);
 
