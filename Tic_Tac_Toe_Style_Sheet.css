@@ -45,7 +45,7 @@ h1 {
     text-align: center;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.8);
-    transition-duration: 2s;
+    transition-duration: 0.15s;
 }
 .butt:active {
   background-color: #3e8e41;
