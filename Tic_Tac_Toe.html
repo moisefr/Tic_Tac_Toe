@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!-- jQuery library -->
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+      </script>
+      <script src="Tic_Tac_Toe_JQuery.js">
+      </script>
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
+      <link rel="stylesheet" type="text/css" href="Tic_Tac_Toe_JQUI.css">
+    </head>
+
+    <body>
+        <div class = "tittle"><h1>Super Awesome Tic Tac Toe Game</h1></div>
+        <div class="gamer">
+            <h1 id="test">Player </h1>
+            <h1 id="test2">Player </h1>
+        </div>
+        <div class="grid-container ui-corner-all" >
+            <div class="grid-item ui-corner-all">
+              <button class="butt" id="0"> </button>
+            </div>
+            <div class="grid-item ui-corner-all">
+              <button class="butt" onclick="board_turn_set()" id="1"> </button>
+            </div>
+            <div class="grid-item ui-corner-all">
+              <button class="butt" onclick="board_turn_set()" id="2"> </button>
+            </div>
+            <div class="grid-item ui-corner-all">
+              <button class="butt" onclick="board_turn_set()" id="3"> </button>
+            </div>
+            <div class="grid-item ui-corner-all">
+              <button class="butt" onclick="board_turn_set()" id="4"> </button>
+            </div>
+            <div class="grid-item ui-corner-all">
+              <button class="butt" onclick="board_turn_set()" id="5"> </button>
+            </div>
+            <div class="grid-item ui-corner-all">
+              <button class="butt" onclick="board_turn_set()" id="6"> </button>
+            </div>
+            <div class="grid-item ui-corner-all">
+              <button class="butt" onclick="board_turn_set()" id="7"> </button>
+            </div>
+            <div class="grid-item ui-corner-all">
+              <button class="butt" onclick="board_turn_set()" id="8"> </button>
+            </div>
+        </div>
+        <script>
+            $(":button").click(function(){
+                if (turn<0){
+                    $(this).html("X");
+                }else if(turn>0){
+                    $(this).html("O");
+                }
+                button_id = $(this).attr('id');
+                $("#team").html(button_id);
+                turn = (-1)*turn;
+            });
+        </script>
+
+    </body>
+</html>
