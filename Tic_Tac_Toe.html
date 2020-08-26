@@ -4,7 +4,7 @@
       <!-- jQuery library -->
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
       </script>
-      <script src="Tic_Tac_Toe_JQuery.js">
+      <script src="Tic_Tac_Toe_Scripts.js">
       </script>
       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
@@ -20,45 +20,34 @@
         </div>
         <div class="grid-container ui-corner-all" >
             <div class="grid-item ui-corner-all">
-              <button class="butt" id="0"> </button>
+              <button class="butt" onclick="userinput(this.id)" id="0"> </button>
             </div>
             <div class="grid-item ui-corner-all">
-              <button class="butt" onclick="board_turn_set()" id="1"> </button>
+              <button class="butt" onclick="userinput(this.id)" id="1"> </button>
             </div>
             <div class="grid-item ui-corner-all">
-              <button class="butt" onclick="board_turn_set()" id="2"> </button>
+              <button class="butt" onclick="userinput(this.id)" id="2"> </button>
             </div>
             <div class="grid-item ui-corner-all">
-              <button class="butt" onclick="board_turn_set()" id="3"> </button>
+              <button class="butt" onclick="userinput(this.id)" id="3"> </button>
             </div>
             <div class="grid-item ui-corner-all">
-              <button class="butt" onclick="board_turn_set()" id="4"> </button>
+              <button class="butt" onclick="userinput(this.id)" id="4"> </button>
             </div>
             <div class="grid-item ui-corner-all">
-              <button class="butt" onclick="board_turn_set()" id="5"> </button>
+              <button class="butt" onclick="userinput(this.id)" id="5"> </button>
             </div>
             <div class="grid-item ui-corner-all">
-              <button class="butt" onclick="board_turn_set()" id="6"> </button>
+              <button class="butt" onclick="userinput(this.id)" id="6"> </button>
             </div>
             <div class="grid-item ui-corner-all">
-              <button class="butt" onclick="board_turn_set()" id="7"> </button>
+              <button class="butt" onclick="userinput(this.id)" id="7"> </button>
             </div>
             <div class="grid-item ui-corner-all">
-              <button class="butt" onclick="board_turn_set()" id="8"> </button>
+              <button class="butt" onclick="userinput(this.id)" id="8"> </button>
             </div>
         </div>
-        <script>
-            $(":button").click(function(){
-                if (turn<0){
-                    $(this).html("X");
-                }else if(turn>0){
-                    $(this).html("O");
-                }
-                button_id = $(this).attr('id');
-                $("#team").html(button_id);
-                turn = (-1)*turn;
-            });
-        </script>
+
 
     </body>
 </html>
